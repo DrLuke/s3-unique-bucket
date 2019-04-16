@@ -6,9 +6,12 @@ Did you ever need a bucket to upload your deployment templates into? Are you alw
 This script is an **easy** and **idempotent** way to just create an S3 bucket that will have a very high chance to avoid name conflicts.
 If run a second time, the script recognizes the bucket already exists and will only emit the bucket's name for reuse.
 
+## Installation
+`pip install s3_unique_bucket`
+
 ## Example
 ````bash
-bucket=$(s3-unique-bucket)
+bucket=$(s3_unique_bucket)
 aws s3 cp foo.txt s3://$bucket/foo.txt
 ````
 
