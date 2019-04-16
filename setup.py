@@ -34,7 +34,7 @@ setup(
 
     entry_points={
         "console_scripts": [
-            "s3-unique-bucket=s3-unique-bucket:main",
+            "s3_unique_bucket=s3_unique_bucket:main",
         ],
     },
 )
