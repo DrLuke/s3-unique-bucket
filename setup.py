@@ -5,7 +5,7 @@ with Path(__file__).parent.joinpath("README.md").open(encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="s3-unique-bucket",
+    name="s3_unique_bucket",
     version="0.1.0",
     description="Insures a unique S3 bucket exists for the account",
 
@@ -32,6 +32,7 @@ setup(
     python_requires=">=3.6, <4",
     install_requires=["boto3"],
 
+    py_modules=["s3_unique_bucket"],
     entry_points={
         "console_scripts": [
             "s3_unique_bucket=s3_unique_bucket:main",
